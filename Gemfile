@@ -7,6 +7,7 @@ ruby '2.7.0'
 gem 'rails', '~> 6.1.0'
 # Add authentication
 gem 'devise'
+gem 'gravtastic'
 # Upload pictures
 gem 'carrierwave'
 # Create thumbnails
