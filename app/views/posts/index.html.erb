@@ -6,7 +6,7 @@
   <div class="row">
     <% group.compact.each do |post| %>
       <div class="col-md-4">
-        <%= image_tag post.picture_url, width: '100%' if post.picture.present? %>
+        <%= image_tag post.picture_url(:thumb) if post.picture.present? %>
         <h4><%= link_to post.description, post %></h4>
       </div>
     <% end %>

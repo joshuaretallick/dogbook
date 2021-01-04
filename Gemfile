@@ -7,6 +7,8 @@ ruby '2.7.0'
 gem 'rails', '~> 6.1.0'
 # Upload pictures
 gem 'carrierwave'
+# Create thumbnails
+gem 'mini_magick'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
