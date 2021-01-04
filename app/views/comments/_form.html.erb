@@ -18,13 +18,10 @@
 
   <div class="field">
     <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, id: :comment_body %>
   </div>
 
-  <div class="field">
-    <%= form.label :idea_id %>
-    <%= form.number_field :idea_id %>
-  </div>
+  <%= form.hidden_field :post_id %>
 
   <div class="actions">
     <%= form.submit %>
