@@ -5,6 +5,8 @@ ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
+# Add authentication
+gem 'devise'
 # Upload pictures
 gem 'carrierwave'
 # Create thumbnails
