@@ -39,4 +39,7 @@
 yarn-debug.log*
 .yarn-integrity
 /public/uploads/
+/coverage/.resultset.json
+/coverage/index.html
 .DS_Store
+
