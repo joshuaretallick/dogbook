@@ -26,7 +26,7 @@ class PostsController < ApplicationController
     b = @post.created_at.to_s
     post_time = Time.parse(b)
     if current_time - post_time > 600
-      redirect_to @post, notice: 'Edit time limit exceeded!'
+      redirect_to @post, alert: 'Edit time limit exceeded!'
     end
   end
 
