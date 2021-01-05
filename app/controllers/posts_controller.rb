@@ -21,6 +21,13 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    a = Time.now.to_s
+    current_time = Time.parse(a)
+    b = @post.created_at.to_s
+    post_time = Time.parse(b)
+    if current_time - post_time > 600
+      redirect_to @post, notice: 'Edit time limit exceeded!'
+    end
   end
 
   # POST /posts
@@ -43,15 +50,16 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    respond_to do |format|
-      if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { render :show, status: :ok, location: @post }
-      else
-        format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+
+      respond_to do |format|
+        if @post.update(post_params)
+          format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+          format.json { render :show, status: :ok, location: @post }
+        else
+          format.html { render :edit }
+          format.json { render json: @post.errors, status: :unprocessable_entity }
+        end
       end
-    end
   end
 
   # DELETE /posts/1
