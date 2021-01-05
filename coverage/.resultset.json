@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/spec/features/creating_user_spec.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/spec/features/creating_user_spec.rb": {
         "lines": [
           1,
           null,
@@ -32,7 +32,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/spec/rails_helper.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -99,7 +99,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/environment.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -108,7 +108,7 @@
           1
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/application.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/application.rb": {
         "lines": [
           1,
           null,
@@ -134,7 +134,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/boot.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -142,7 +142,7 @@
           1
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/environments/test.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -206,7 +206,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/application_controller_renderer.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -218,7 +218,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/assets.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -236,7 +236,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/backtrace_silencers.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -248,7 +248,7 @@
           1
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/content_security_policy.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -282,7 +282,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/cookies_serializer.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -291,7 +291,7 @@
           1
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/devise.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -606,7 +606,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/filter_parameter_logging.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -616,7 +616,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/inflections.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -636,7 +636,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/mime_types.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -644,7 +644,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/permissions_policy.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -659,7 +659,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/initializers/wrap_parameters.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -677,7 +677,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/config/routes.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -689,7 +689,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/models/user.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -700,38 +700,38 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/models/application_record.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/helpers/application_helper.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/helpers/comments_helper.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/helpers/comments_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/helpers/pages_helper.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/helpers/pages_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/helpers/posts_helper.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/helpers/posts_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/spec/models/post_spec.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/spec/models/post_spec.rb": {
         "lines": [
           1,
           null,
@@ -744,7 +744,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/controllers/posts_controller.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/controllers/posts_controller.rb": {
         "lines": [
           1,
           1,
@@ -825,7 +825,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/controllers/application_controller.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -843,7 +843,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/models/post.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/models/post.rb": {
         "lines": [
           1,
           1,
@@ -852,7 +852,7 @@
           null
         ]
       },
-      "/Users/kabligh/Makers/dogbook-jasshands/dogbook/app/uploaders/picture_uploader.rb": {
+      "/Users/joshuaretallick/Projects/Bootcamp/dogbook/dogbook/app/uploaders/picture_uploader.rb": {
         "lines": [
           1,
           null,
@@ -907,6 +907,6 @@
         ]
       }
     },
-    "timestamp": 1609776613
+    "timestamp": 1609845528
   }
 }
