@@ -1,14 +1,16 @@
 <h1>Feed</h1>
 
+<div class="container">
 <% @posts.in_groups_of(1) do |group| %>
   <div class="row">
     <% group.compact.each do |post| %>
-      <div class="col-md-4">
-        <%= image_tag post.picture_url(:thumb) if post.picture.present? %>
-        <h4><%= simple_format link_to post.description, post %></h4>
+      <div class="col-md-7">
+        <%= image_tag post.picture_url, width: '20%' if post.picture.present? %>
+        <h5><%= simple_format link_to post.description, post %></h5>
         Posted by <%= post.user.name %> at
         <%= post.created_at.strftime("%k:%M, #{post.created_at.day.ordinalize} %B %Y") %>
       </div>
     <% end %>
   </div>
 <% end %>
+</div>

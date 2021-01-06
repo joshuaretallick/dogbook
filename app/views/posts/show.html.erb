@@ -9,7 +9,7 @@
   </div>
 
   <div class="col-md-9">
-    <%= image_tag(@post.picture_url, width: '100%') if @post.picture.present? %>
+    <%= image_tag(@post.picture_url, width: '70%') if @post.picture.present? %>
     <p>Comments</p>
     <% @comments.each do |comment| %>
       <div>
