@@ -20,12 +20,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/posts">Home</a>
+              <a class="nav-link" href="/posts">Park</a>
             </li>
             <p class="navbar-text float-right">
             <% if user_signed_in? %>
-              | <%= link_to 'New Post', new_post_path, class: "navbar-link" %> |
-              Logged in as <strong><%= current_user.email %></strong> |
+              | <%= link_to 'New bark', new_post_path, class: "navbar-link" %> |
+              Logged in as <strong><%= current_user.name %></strong> |
               <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
               <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
             <% end %>
@@ -45,7 +45,7 @@
     </div>
     <footer>
       <div class="container">
-        Dogbook <%= Time.now.year %>
+        Jasshands <%= Time.now.year %>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
