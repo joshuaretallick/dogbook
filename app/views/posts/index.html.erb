@@ -5,7 +5,7 @@
     <% group.compact.each do |post| %>
       <div class="col-md-4">
         <%= image_tag post.picture_url(:thumb) if post.picture.present? %>
-        <h4><%= link_to post.description, post %></h4>
+        <h4><%= simple_format link_to post.description, post %></h4>
         Posted by <%= post.user.name %> at
         <%= post.created_at.strftime("%k:%M, #{post.created_at.day.ordinalize} %B %Y") %>
       </div>
