@@ -35,3 +35,7 @@ footer {
   background-color: #ebebeb;
   padding: 30px 0;
 }
+
+.hidden{
+  display: none;
+}
