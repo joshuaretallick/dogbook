@@ -43,3 +43,4 @@ yarn-debug.log*
 /coverage/index.html
 .DS_Store
 
+/coverage/
