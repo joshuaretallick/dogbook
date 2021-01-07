@@ -12,16 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :description %>
+    <div class="hidden">
+      <%= form.label :description %>
+    </div>
     <%= form.text_area :description %>
   </div>
 
   <div class="field">
-    <%= form.label :picture %>
+    <div class="hidden">
+      <%= form.label :picture %>
+    </div>
     <%= form.file_field :picture %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Bark!" %>
   </div>
 <% end %>
