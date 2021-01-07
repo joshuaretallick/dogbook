@@ -7,6 +7,8 @@ Card wall [is here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 ## Project process here:
 [CONTRIBUTING.md](CONTRIBUTING.md)
 
+## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/)
+
 ## User stories
 
 ```
