@@ -29,7 +29,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @comment, notice: 'Sniff was sockcessful' }
+        format.html { redirect_to @comment.post, notice: 'Sniff was sockcessful' }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class CommentsController < ApplicationController
   def update
     respond_to do |format|
       if @comment.update(comment_params)
-        format.html { redirect_to @comment, notice: 'Sniff pupdated' }
+        format.html { redirect_to @comment.post, notice: 'Sniff pupdated' }
         format.json { render :show, status: :ok, location: @comment }
       else
         format.html { render :edit }
@@ -55,9 +55,10 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
+    post_used = @comment.post
     @comment.destroy
     respond_to do |format|
-      format.html { redirect_to comments_url, notice: 'Nothing to be sniffed at here' }
+      format.html { redirect_to post_used, notice: 'Nothing to be sniffed at here' }
       format.json { head :no_content }
     end
   end
