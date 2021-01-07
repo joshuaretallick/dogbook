@@ -5,7 +5,10 @@ RSpec.describe PostsController, type: :controller do
   login_user
 
   let(:valid_attributes) {
-      { :description => "This is a test description" }
+      {
+        :description => "This is a test description",
+        :user_id => 1
+      }
   }
 
   let(:valid_session) { {} }

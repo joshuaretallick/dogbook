@@ -8,4 +8,8 @@ FactoryBot.define do
     # Add additional fields as required via your User model
   end
 
+  factory :post do
+    description {"Test post"}
+  end
+
 end
