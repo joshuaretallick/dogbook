@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     if @post.user != current_user
-      redirect_to @post, alert: 'You can only edit your own posts'
+      redirect_to @post, alert: 'You can only edit your own barks'
     elsif exceed_time_limit
       redirect_to @post, alert: 'Edit time limit exceeded!'
     end
@@ -36,7 +36,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to @post, notice: 'Your bark was heard all around the Park!' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to @post, notice: 'Bark was pawfectly pupdated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -63,11 +63,11 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     if @post.user != current_user
-      redirect_to @post, alert: 'You can only delete your own posts'
+      redirect_to @post, alert: 'You can only chew your own posts'
     else
       @post.destroy
       respond_to do |format|
-        format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+        format.html { redirect_to posts_url, notice: 'Bark was chewed. Gone but not furgotten' }
         format.json { head :no_content }
       end
     end

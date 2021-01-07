@@ -3,7 +3,7 @@
     <p><b>Bark: </b><%= simple_format @post.description %></p>
     <p>
       <%= link_to 'Edit', edit_post_path(@post) %> |
-      <%= link_to 'Chew up', @post, data: { confirm: 'Are you sure?' }, method: :delete %> |
+      <%= link_to 'Chew', @post, data: { confirm: 'Are you sure?' }, method: :delete %> |
       <%= link_to 'Back', posts_path %>
     </p>
   </div>

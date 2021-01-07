@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <div class="hidden">
+    <%= form.label :description %>
+  </div>
+
   <div class="field">
     <%= form.text_area :description %>
   </div>
@@ -20,7 +24,12 @@
     <%= form.file_field :picture %><br><br>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="hidden">
+    <%= form.label :picture %>
   </div>
+
+  <div class="actions">
+    <%= form.submit "Bark!" %>
+  </div>
+
 <% end %>
