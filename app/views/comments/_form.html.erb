@@ -13,12 +13,11 @@
 
 
   <div class="field">
-    
     <%= form.text_area :body, id: :comment_body %>
   </div>
 
   <%= form.hidden_field :post_id %>
-
+  <%= form.hidden_field :user_id %>
   <div class="actions">
     <%= form.submit %>
   </div>

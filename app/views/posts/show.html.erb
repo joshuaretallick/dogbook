@@ -15,6 +15,7 @@
       <div>
         <br>
         <p><%= comment.body %></p>
+        Posted by <%= comment.user.name %>
         <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
       </div>
     <% end %>
