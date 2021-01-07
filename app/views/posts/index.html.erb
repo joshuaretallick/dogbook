@@ -9,6 +9,7 @@
         <h5><%= simple_format link_to post.description, post %></h5>
         Posted by <%= post.user.name %> at
         <%= post.created_at.strftime("%k:%M, #{post.created_at.day.ordinalize} %B %Y") %>
+        <p><%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
       </div>
     <% end %>
   </div>
