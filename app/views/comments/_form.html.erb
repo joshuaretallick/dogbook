@@ -11,16 +11,16 @@
     </div>
   <% end %>
 
+  <div class="hidden">
+    <%= form.label :body %>
+  </div>
 
   <div class="field">
-    <div class="hidden">
-      <%= form.label :body %>
-    </div>
     <%= form.text_area :body, id: :comment_body %>
   </div>
 
   <%= form.hidden_field :post_id %>
-
+  <%= form.hidden_field :user_id %>
   <div class="actions">
     <%= form.submit "Sniff!" %>
   </div>
