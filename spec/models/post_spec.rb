@@ -1,8 +1,14 @@
 require 'rails_helper.rb'
 
-describe 'creating a post' do
-  it "has a description" do # yep, you can totally use 'it' 
-    post = Post.create!(description: "My awesome post description") # creating a new post 'instance' 
-    expect(post.description).to eq("My awesome post description") # this is our expectation 
+RSpec.describe Post, type: :model do
+
+  let(:user) { build :user}
+  let(:post) { build :post }
+
+  describe 'creating a post' do
+    it "has a description" do
+      expect(post.description).to eq("Test post")
+    end
   end
+
 end

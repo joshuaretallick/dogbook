@@ -16,20 +16,6 @@ feature 'post creation' do
     expect(page).to have_css("img[src*='dog_park.jpeg']")
   end
 
-  it 'lets the user edit a post signed in' do
-    sign_up
-    post_photo_bark
-    expect(page).to have_css("img[src*='dog_park.jpeg']")
-    click_link 'Park'
-    click_link 'I love chasing squirrels'
-    click_link 'Edit'
-    fill_in 'Description', with: 'I love eating bones'
-    page.attach_file(Rails.root + "spec/images/dog_bone.jpg")
-    click_button('Bark!')
-    expect(page).to have_no_css("img[src*='dog_park.jpeg']")
-    expect(page).to have_css("img[src*='dog_bone.jpg']")
-    expect(page).to have_content('Bark was pawfectly pupdated.')
-  end
 
   it 'lets the user delete a post signed in' do
     sign_up
