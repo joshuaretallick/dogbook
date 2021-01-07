@@ -16,6 +16,7 @@ feature 'comment creation' do
     sign_up
     post_bark
     create_comment
+    click_link 'Edit comment'
     click_link 'Edit'
     fill_in 'Body', with: 'I really love chasing squirrels too!'
     click_button 'Sniff'
