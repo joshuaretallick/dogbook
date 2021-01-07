@@ -1,4 +1,5 @@
 require 'rails_helper.rb'
+require 'helpers/sign_up.rb'
 
 feature 'user signup' do
   it 'takes new user to Signup form' do
@@ -15,13 +16,7 @@ feature 'user signup' do
   end
 
   it 'takes user to posts page after they sign up' do
-    visit '/'
-    click_link 'Join pack'
-    fill_in 'Email', with: 'hyko@example.com'
-    fill_in 'Name', with: 'Hyko'
-    fill_in 'Password', with: 'Squirrels'
-    fill_in 'Password confirmation', with: 'Squirrels'
-    click_button 'Join pack'
+    sign_up
     expect(page).to have_content('Barks')
   end
 end
