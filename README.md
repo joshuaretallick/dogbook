@@ -82,3 +82,10 @@ Here are some of the materials we found helpful:
 ## Tools used
 - Lucidcharts
 - Balsamiq
+
+### The Jasshands team
+
+[Joshua Retallick](https://github.com/joshuaretallick)
+[K Annabel Bligh](https://github.com/kabligh)
+[Samantha Gottlieb](https://github.com/samanthagottlieb)
+[Savanna Elbey](https://github.com/savannaelbey)
