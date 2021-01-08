@@ -1,5 +1,7 @@
 require 'rails_helper.rb'
 require 'helpers/sign_up.rb'
+require 'helpers/post_photo_bark.rb'
+require 'helpers/post_bark.rb'
 
 feature 'edit post' do
   it 'lets the user edit their post when signed in' do
@@ -16,6 +18,13 @@ feature 'edit post' do
   end
 
   it "does not let a user edit another user's post" do
-
+    sign_up
+    post_bark
+    click_link 'Logout'
+    expect(page).to have_content('You need to sign in or sign up before continuing.')
+    user2_sign_up
+    click_link 'I love chasing squirrels'
+    click_link 'Edit'
+    expect(page).to have_content('You can only edit your own barks')
   end
 end
