@@ -1,4 +1,4 @@
-# Dogbook by Jasshands
+# Dogbook by Jasshands!
 
 Makers Academy weeks 8 and 9 engineering project. The [original project outline is here](https://github.com/makersacademy/course/tree/master/engineering_projects/rails).
 
