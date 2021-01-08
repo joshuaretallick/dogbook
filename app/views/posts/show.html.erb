@@ -1,32 +1,54 @@
-<div class="row">
-  <div class="col-md-3">
-    <p><b>Bark: </b><%= simple_format @post.description %></p>
-    <p>
-      <%= link_to 'Edit', edit_post_path(@post) %> |
-      <%= link_to 'Chew', @post, data: { confirm: 'Are you sure?' }, method: :delete %> |
-      <%= link_to 'Back', posts_path %>
-    </p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h5>Bark:</h5>
+      <%= image_tag(@post.picture_url, width: '70%') if @post.picture.present? %>
+      <p><%= simple_format @post.description %></p>
+      Posted by <%= @post.user.name %>
+      <p>
+        <%= link_to 'Edit', edit_post_path(@post) %> |
+        <%= link_to 'Chew', @post, data: { confirm: 'Are you sure?' }, method: :delete %> |
+        <%= link_to 'Back', posts_path %>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
+      <% if pre_like %>
+        <%= button_to 'Unlick', post_like_path(@post, pre_like), method: :delete %>
+      <% else %>
+        <%= button_to 'Lick', post_likes_path(@post), method: :post %>
+      <% end %>
+      <%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Lick' : 'Licks'%>
+    </div>
   </div>
 
-  <div class="col-md-9">
-    <%= image_tag(@post.picture_url, width: '70%') if @post.picture.present? %>
-    <p>Comments</p>
-    <% @comments.each do |comment| %>
-      <div>
+  <div class="row">
+    <div class="col-md-3">
+      <h5>Comments</h5>
+    </div>
+  </div>
+
+  <div class="row">
+      <% @comments.each do |comment| %>
         <br>
+        <div class="col-md-6">
         <p><%= comment.body %></p>
         Posted by <%= comment.user.name %>
-        <p><%= link_to 'Edit comment', comment_path(comment) %></p>
-        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div>
-    <% end %>
-    <% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
-    <% if pre_like %>
-      <%= button_to 'Unlick', post_like_path(@post, pre_like), method: :delete %>
-    <% else %>
-      <%= button_to 'Lick', post_likes_path(@post), method: :post %>
-    <% end %>
-    <p><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Lick' : 'Licks'%></p>
-    <%= render partial: 'comments/form', locals: { comment: @comment } %>
+          <p>
+            <%= link_to 'Edit comment', comment_path(comment) %> |
+            <%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </p>
+        </div>
+      <% end %>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-5">
+      <h5>New comment:</h5>
+      <%= render partial: 'comments/form', locals: { comment: @comment }, placeholder: "Write comment" %>
+    </div>
   </div>
 </div>
