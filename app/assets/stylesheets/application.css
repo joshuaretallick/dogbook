@@ -46,3 +46,8 @@ footer {
 .hidden{
   display: none;
 }
+
+.gravatar {
+  height: 30px;
+  width: auto;
+}

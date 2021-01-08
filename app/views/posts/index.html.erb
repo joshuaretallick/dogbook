@@ -7,7 +7,8 @@
       <div class="col-md-7">
         <%= image_tag post.picture_url, width: '20%' if post.picture.present? %>
         <h5><%= simple_format link_to post.description, post %></h5>
-        Posted by <%= post.user.name %> at
+        Posted by <%= image_tag current_user.gravatar_url, :class => "gravatar" %>
+        <%= post.user.name %> at
         <%= post.created_at.strftime("%k:%M, #{post.created_at.day.ordinalize} %B %Y") %>
         <p><%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Lick' : 'Licks'%></p>
       </div>

@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  include Gravtastic
+  gravtastic
   has_many :posts
   has_many :comments
   has_many :likes, dependent: :destroy
