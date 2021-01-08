@@ -3,8 +3,9 @@
     <div class="col-md-8">
       <h4>Bark 🔊</h4>
       <%= image_tag(@post.picture_url, width: '70%') if @post.picture.present? %>
-      <p><%= simple_format @post.description %></p>
-      Posted by <%= @post.user.name %>
+      <p><strong><%= simple_format @post.description %></strong></p>
+      Posted by <%= @post.user.name %> at
+      <%= @post.created_at.strftime("%k:%M, #{@post.created_at.day.ordinalize} %B %Y") %>
       <p>
         <%= link_to 'Edit', edit_post_path(@post) %> |
         <%= link_to 'Chew', @post, data: { confirm: 'Are you sure?' }, method: :delete %> |
