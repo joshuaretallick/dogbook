@@ -4,7 +4,7 @@ Makers Academy weeks 8 and 9 engineering project. The [original project outline 
 
 Card wall [is here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 
-## Project process here:
+## Project process
 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/)
@@ -51,13 +51,16 @@ Posts let me have line breaks where I want them.
 ```
 
 
-Resources used:
-Authentication - https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8
-Logging Out - https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325
-=======
+## Resources
+
+(Authentication)[https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8]
+(Logging Out)[https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325]
+
+## Diagrams
+
 <img width="818" alt="Screenshot 2020-12-16 at 12 00 06" src="https://user-images.githubusercontent.com/71889577/102346099-40d0c480-3f96-11eb-9848-da9b97c8002a.png">
 
-![Entity relationship diagram – users and posts](assets/images/Acebook_ERD.png)
+![Entity relationship diagram – users and posts](app/assets/images/Acebook_ERD.png)
 
 
 ## Tools used
