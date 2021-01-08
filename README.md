@@ -7,7 +7,10 @@ Card wall [is on Trello here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 <!-- ## Project process
 [CONTRIBUTING.md](CONTRIBUTING.md) -->
 
-## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/)
+## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/).
+
+The homepage looks like this
+![homepage screenshot](app/assets/images/homepage-screenshot.png)
 
 ## User stories
 
@@ -64,7 +67,7 @@ I can see who is making comments.
 Here are some of the materials we found helpful:
 
 - For [authentication](https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8)
-- For [logging Out](https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325)
+- For [logging out](https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325)
 
 ## Diagrams
 
