@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8">
-      <h5>Bark:</h5>
+      <h4>Bark 🔊</h4>
       <%= image_tag(@post.picture_url, width: '70%') if @post.picture.present? %>
       <p><%= simple_format @post.description %></p>
       Posted by <%= @post.user.name %>
@@ -26,7 +26,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <h5>Comments</h5>
+      <h5>Sniffs</h5>
     </div>
   </div>
 
@@ -47,7 +47,7 @@
 
   <div class="row">
     <div class="col-md-5">
-      <h5>New comment:</h5>
+      <h5>New sniff:</h5>
       <%= render partial: 'comments/form', locals: { comment: @comment }, placeholder: "Write comment" %>
     </div>
   </div>
