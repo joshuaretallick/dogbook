@@ -1,5 +1,5 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-ENV['RAILS_ENV'] ||= 'test'
+ENV['RAILS_ENV'] ||= 'test' ./bin/rails webpacker:compile
 
 require File.expand_path('../config/environment', __dir__)
 
