@@ -2,10 +2,10 @@
 
 Makers Academy weeks 8 and 9 engineering project. The [original project outline is here](https://github.com/makersacademy/course/tree/master/engineering_projects/rails).
 
-Card wall [is here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
+Card wall [is on Trello here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 
-## Project process
-[CONTRIBUTING.md](CONTRIBUTING.md)
+<!-- ## Project process
+[CONTRIBUTING.md](CONTRIBUTING.md) -->
 
 ## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/)
 
@@ -13,11 +13,11 @@ Card wall [is here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 
 ```
 As a user,
-So I can access Acebook (by Jasshands),
+So I can access Dogbook,
 I need to sign up with my email and password.
 
 As a user,
-So I can use Acebook,
+So I can use Dogbook,
 I want to sign in to my account.
 
 As a user,
@@ -48,13 +48,23 @@ As a user,
 So I can post my poetry,
 Posts let me have line breaks where I want them.
 
+As a user,
+So I can engage with others,
+I can comment on posts.
+
+As a user,
+So I can see who is commenting,
+I can see who is making comments.
+
 ```
 
 
 ## Resources
 
-[Authentication](https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8)
-[Logging Out](https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325)
+Here are some of the materials we found helpful:
+
+- For [authentication](https://levelup.gitconnected.com/simple-authentication-guide-with-ruby-on-rails-16a6255f0be8)
+- For [logging Out](https://moustafamm.medium.com/authentication-in-rails-sign-up-log-in-and-log-out-8042b35b4325)
 
 ## Diagrams
 
