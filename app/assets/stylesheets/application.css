@@ -31,9 +31,9 @@ body { margin: 0; }
  text-decoration: none;
 }
 
-.col-md-7 {
+.col-md-6 {
   border-style: ridge;
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 25px 25px 25px 25px;
   margin: 5px 5px 5px 5px;
 }
