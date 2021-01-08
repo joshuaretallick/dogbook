@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def user2_sign_up
   click_link 'Join pack'
   fill_in 'Email', with: 'user2@example.com'

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: %i[show edit update destroy]
   before_action :authenticate_user!
   # GET /posts
   # GET /posts.json
@@ -74,21 +76,22 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:description, :picture)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
-    def exceed_time_limit
-      a = Time.now.to_s
-      current_time = Time.parse(a)
-      b = @post.created_at.to_s
-      post_time = Time.parse(b)
-      current_time - post_time > 600
-    end
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.require(:post).permit(:description, :picture)
+  end
+
+  def exceed_time_limit
+    a = Time.now.to_s
+    current_time = Time.parse(a)
+    b = @post.created_at.to_s
+    post_time = Time.parse(b)
+    current_time - post_time > 600
+  end
 end

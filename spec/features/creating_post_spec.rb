@@ -1,7 +1,9 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
-require 'helpers/post_bark.rb'
-require 'helpers/post_photo_bark.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
+require 'helpers/post_bark'
+require 'helpers/post_photo_bark'
 
 feature 'post creation' do
   it 'lets the user create a post when signed in' do
@@ -18,5 +20,4 @@ feature 'post creation' do
     expect(page).to have_content('I love chasing squirrels')
     expect(page).to have_css("img[src*='dog_park.jpeg']")
   end
-
 end

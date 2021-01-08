@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # root to: redirect('/users/sign_up')
   devise_for :users

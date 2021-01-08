@@ -1,5 +1,7 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
 
 feature 'user signup' do
   it 'takes new user to Signup form' do

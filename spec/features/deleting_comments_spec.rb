@@ -1,7 +1,9 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
-require 'helpers/post_bark.rb'
-require 'helpers/create_comment.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
+require 'helpers/post_bark'
+require 'helpers/create_comment'
 
 feature 'delete comment' do
   it 'lets the user delete their comment when signed in' do

@@ -1,7 +1,9 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
-require 'helpers/post_bark.rb'
-require 'helpers/post_photo_bark.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
+require 'helpers/post_bark'
+require 'helpers/post_photo_bark'
 
 feature 'liking posts' do
   it 'lets users like their own posts and other users posts' do
@@ -34,8 +36,5 @@ feature 'liking posts' do
     expect(page).to have_content('1 Lick')
     click_button 'Unlick'
     expect(page).to have_content('0 Licks')
-
   end
-
-
 end

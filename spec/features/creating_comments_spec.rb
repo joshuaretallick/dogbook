@@ -1,7 +1,9 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
-require 'helpers/post_bark.rb'
-require 'helpers/create_comment.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
+require 'helpers/post_bark'
+require 'helpers/create_comment'
 
 feature 'comment creation' do
   it 'lets the user create comment on their own post when signed in' do
@@ -11,5 +13,4 @@ feature 'comment creation' do
     expect(page).to have_content('I love chasing squirrels too!')
     expect(page).to have_content('Sniff was sockcessful')
   end
-
 end

@@ -1,8 +1,10 @@
-require 'rails_helper.rb'
-require 'helpers/sign_up.rb'
-require 'helpers/post_bark.rb'
-require 'helpers/post_photo_bark.rb'
-require 'helpers/user2_sign_up.rb'
+# frozen_string_literal: true
+
+require 'rails_helper'
+require 'helpers/sign_up'
+require 'helpers/post_bark'
+require 'helpers/post_photo_bark'
+require 'helpers/user2_sign_up'
 
 feature 'Delete post' do
   it 'lets the user delete their post when signed in' do
