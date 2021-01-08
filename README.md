@@ -4,13 +4,16 @@ Makers Academy weeks 8 and 9 engineering project. The [original project outline 
 
 Card wall [is on Trello here](https://trello.com/b/56RoJ3Aw/acebook-jasshands).
 
-<!-- ## Project process
-[CONTRIBUTING.md](CONTRIBUTING.md) -->
-
-## View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/).
+### View our project on [Heroku](https://stark-badlands-89046.herokuapp.com/).
 
 The homepage looks like this
 ![homepage screenshot](app/assets/images/homepage-screenshot.png)
+
+## Testing
+
+We tested our app with Capybara and RSpec. Coverage, measure with SimpleCov, is at 96.7%
+
+![Screenshot of tests](images/Testing-Screenshot.png)
 
 ## User stories
 
