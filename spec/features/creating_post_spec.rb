@@ -8,19 +8,15 @@ feature 'post creation' do
     sign_up
     post_bark
     expect(page).to have_content('Your bark was heard all around the Park!')
+    expect(page).to have_content('I love chasing squirrels')
   end
 
   it 'lets the user create a post with a picture when signed in' do
     sign_up
     post_photo_bark
+    expect(page).to have_content('Your bark was heard all around the Park!')
+    expect(page).to have_content('I love chasing squirrels')
     expect(page).to have_css("img[src*='dog_park.jpeg']")
   end
 
-
-  it 'lets the user delete a post signed in' do
-    sign_up
-    post_photo_bark
-    click_link 'Chew'
-    expect(page).to have_content('Bark was chewed. Gone but not furgotten')
-  end
 end
