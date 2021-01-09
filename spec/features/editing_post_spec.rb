@@ -11,7 +11,7 @@ feature 'edit post' do
     post_photo_bark
     click_link 'Edit'
     fill_in 'Description', with: 'I love eating bones'
-    page.attach_file("#{Rails.root}spec/images/dog_bone.jpg")
+    page.attach_file("#{Rails.root}/spec/images/dog_bone.jpg")
     click_button('Bark!')
     expect(page).to have_content('I love eating bones')
     expect(page).to have_no_css("img[src*='dog_park.jpeg']")
