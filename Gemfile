@@ -11,6 +11,8 @@ gem 'gravtastic'
 # Upload pictures
 gem 'carrierwave'
 # Create thumbnails
+gem 'figaro'
+gem 'fog-aws'
 gem 'mini_magick'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
